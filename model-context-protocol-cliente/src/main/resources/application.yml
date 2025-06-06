@@ -1,0 +1,17 @@
+server.port: 8040
+
+spring:
+  application.name: model-context-protocol-cliente
+
+  ai:
+    openai:
+      api-key: <<insira sua api-key aqui>>
+      chat:
+        model: gpt-3.5-turbo
+    mcp:
+      client:
+        # sse = Server-Sent Events
+        sse:
+          connections:
+            produtos-server:
+              url: http://localhost:8060

@@ -1,0 +1,14 @@
+server.port: 8060
+
+spring:
+  application.name: model-context-protocol-servidor
+
+  ai:
+    openai:
+      api-key: <<insira sua api-key aqui>>
+      chat:
+        model: gpt-3.5-turbo
+    mcp:
+      server:
+        name: produtos-server
+        version: 1.0.0
